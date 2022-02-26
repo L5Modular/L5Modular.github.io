@@ -2,7 +2,7 @@
   "name": "l5modular-docs",
   "version": "2.0.0",
   "description": "L5-Modular Documentation",
-  "repository": "https://github.com/Artem-Schander/l5modular-docs",
+  "repository": "https://github.com/L5Modular/L5Modular.github.io",
   "author": "Artem Schander <schander.artem@gmail.com>",
   "scripts": {
     "docs:dev": "vuepress dev docs",

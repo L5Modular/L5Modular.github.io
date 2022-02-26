@@ -42,7 +42,7 @@ module.exports = {
     logo: '/assets/logo-no-borders-bicolor-vibrant.svg',
     // nav: [{ text: 'Free Modules', link: 'https://share.l5modular.com' }],
     sidebar: ['/introduction/', '/getting-started/', '/usage/', '/artisan-commands/', '/configuration/'],
-    repo: 'Artem-Schander/L5Modular',
+    repo: 'L5Modular/L5Modular',
     repoLabel: 'Contribute!',
     // docsRepo: 'Artem-Schander/L5ModularDocs',
     // docsDir: 'docs',
