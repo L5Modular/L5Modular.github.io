@@ -41,6 +41,17 @@ module.exports = {
   themeConfig: {
     logo: '/assets/logo-no-borders-bicolor-vibrant.svg',
     // nav: [{ text: 'Free Modules', link: 'https://share.l5modular.com' }],
+    navbar: [
+      // NavbarItem
+      {
+        text: 'Getting Started',
+        link: '/getting-started/',
+      },
+      {
+        text: 'Configuration',
+        link: '/configuration/',
+      },
+    ],
     sidebar: ['/introduction/', '/getting-started/', '/usage/', '/artisan-commands/', '/configuration/'],
     repo: 'L5Modular/L5Modular',
     repoLabel: 'Contribute!',
