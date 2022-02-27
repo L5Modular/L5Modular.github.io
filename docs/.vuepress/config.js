@@ -40,7 +40,7 @@ module.exports = {
   theme: '@vuepress/theme-default',
   themeConfig: {
     logo: '/assets/logo-no-borders-bicolor-vibrant.svg',
-    // nav: [{ text: 'Free Modules', link: 'https://share.l5modular.com' }],
+    // navbar: [{ text: 'Free Modules', link: 'https://share.l5modular.com' }],
     navbar: [
       // NavbarItem
       {
