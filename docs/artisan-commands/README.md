@@ -768,7 +768,7 @@ This command generates a helpers file into a module.
 By passing in the corresponding option you can define in which module the helpers file should be generated.
 
 ```bash
-`php artisan make:module:helpers`
+php artisan make:module:helpers
 ```
 
 <details>

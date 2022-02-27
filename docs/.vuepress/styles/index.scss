@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300 700;
+  font-stretch: 75% 125%;
+  src: url('~@theme/fonts/FiraCode-VariableFont_wght.woff2') format('woff2');
+}
+
+pre.shiki code {
+  font-family: 'Fira Code';
+}
+
+div[class*=language-] {
+  // background-color: #1E1E1E; // dark-plus
+  // background-color: #222222; // slack-dark
+  // background-color: #282c34; // one-dark-pro
+}
+
 :root {
   scroll-behavior: smooth;
 }
@@ -159,8 +177,8 @@ html.dark {
   // custom container colors
   --c-tip: #318a62;
   --c-warning: #ceab00;
-  --c-warning-bg: #7e755b;
-  --c-warning-title: #ceac03;
+  --c-warning-bg: #d3c395;
+  --c-warning-title: #8f7911;
   --c-warning-text: #362e00;
   --c-danger: #940000;
   --c-danger-bg: #806161;

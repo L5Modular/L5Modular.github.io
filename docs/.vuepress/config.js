@@ -67,7 +67,13 @@ module.exports = {
     '@theme/Home.vue': path.resolve(__dirname, './components/Home.vue'),
   },
   plugins: [
+    // ['@vuepress/shiki', { theme: 'dark-plus' }]
+    // ['@vuepress/shiki', { theme: 'slack-dark' }]
     ['@vuepress/shiki', { theme: 'one-dark-pro' }]
+    // ['@vuepress/shiki', { theme: 'material-palenight' }]
+    // ['@vuepress/shiki', { theme: 'dracula-soft' }]
+    // ['@vuepress/shiki', { theme: 'nord' }]
+
     // ['@vuepress/plugin-search', {
     //   isSearchable: (page) => page.path !== '/',
     // }]
