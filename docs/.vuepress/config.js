@@ -69,7 +69,7 @@ module.exports = {
   plugins: [
     // ['@vuepress/shiki', { theme: 'dark-plus' }]
     // ['@vuepress/shiki', { theme: 'slack-dark' }]
-    ['@vuepress/shiki', { theme: 'one-dark-pro' }]
+    ['@vuepress/shiki', { theme: 'one-dark-pro' }],
     // ['@vuepress/shiki', { theme: 'material-palenight' }]
     // ['@vuepress/shiki', { theme: 'dracula-soft' }]
     // ['@vuepress/shiki', { theme: 'nord' }]
@@ -77,5 +77,21 @@ module.exports = {
     // ['@vuepress/plugin-search', {
     //   isSearchable: (page) => page.path !== '/',
     // }]
+
+    ['@vuepress/docsearch', {
+      apiKey: '731cf9a8fe07768e6c141e98be94b288',
+      indexName: 'l5modular',
+      appId: 'HVLD2HVW31',
+      locales: {
+        '/': {
+          placeholder: 'Search',
+          translations: {
+            button: {
+              buttonText: 'Search',
+            },
+          },
+        },
+      },
+    }]
   ],
 };
