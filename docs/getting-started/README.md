@@ -65,7 +65,7 @@ laravel-project/
 #### Custom Module
 
 The said command [can be configured](/configuration/) to generate modules completely differently structured and up to the following extent.  
-Of course it is also possible to [add any kind of additional classes](/usage/loading-additional-classes/) to any module, as long as it follows the PSR-4 autoloading convention.
+Of course it is also possible to [add any kind of additional classes](/usage/#loading-additional-classes/) to any module, as long as it follows the PSR-4 autoloading convention.
 
 ```
 laravel-project/
