@@ -6,6 +6,10 @@
   src: url('/fonts/FiraCode/FiraCode-VariableFont_wght.woff2') format('woff2');
 }
 
+header a[href="/"] {
+  white-space: nowrap;
+}
+
 pre.shiki code {
   font-family: 'Fira Code';
 }
