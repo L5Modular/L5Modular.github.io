@@ -54,7 +54,7 @@ module.exports = {
     ],
     sidebar: ['/introduction/', '/getting-started/', '/usage/', '/artisan-commands/', '/configuration/'],
     repo: 'L5Modular/L5Modular',
-    repoLabel: 'Contribute!',
+    repoLabel: 'GitHub',
     docsRepo: 'L5Modular/L5Modular.github.io',
     docsDir: 'docs',
     editLinks: true,
