@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.35">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/assets/favicon-vibrant.png"><meta name="theme-color" content="#c8edd3"><meta prefix="og: http://ogp.me/ns#" property="og:title" content="L5Modular"><meta prefix="og: http://ogp.me/ns#" property="twitter:title" content="L5Modular"><meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"><meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://l5modular.com"><meta prefix="og: http://ogp.me/ns#" property="og:description" content="Keep Your Laravel App Organized"><meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://l5modular.com/assets/og-vibrant.png"><meta prefix="og: http://ogp.me/ns#" property="og:article:author" content="Artem Schander"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/assets/logo-no-borders-bicolor-vibrant.png"><link rel="mask-icon" href="/assets/logo-no-borders-bicolor-vibrant.svg" color="#c8edd3"><meta name="msapplication-TileImage" content="/assets/tile-vibrant.png"><meta name="msapplication-TileColor" content="#c8edd3"><title>Getting Started | L5Modular</title><meta name="description" content="Keep Your Laravel App Organized">
+    <link rel="modulepreload" href="/assets/app.d06ad9c0.js"><link rel="modulepreload" href="/assets/index.html.52de5046.js"><link rel="modulepreload" href="/assets/index.html.2f6070f6.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper.21dcd24c.js">
+    <link rel="stylesheet" href="/assets/style.0fd7ee1f.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="/assets/logo-no-borders-bicolor-vibrant.svg" alt="L5Modular"><span class="site-name can-hide">L5Modular</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a aria-current="page" href="/getting-started/" class="router-link-active router-link-exact-active router-link-active" aria-label="Getting Started"><!--[--><!--]--> Getting Started <!--[--><!--]--></a></div><div class="navbar-item"><a href="/configuration/" class="" aria-label="Configuration"><!--[--><!--]--> Configuration <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/L5Modular/L5Modular" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><div id="docsearch-container"></div></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a aria-current="page" href="/getting-started/" class="router-link-active router-link-exact-active router-link-active" aria-label="Getting Started"><!--[--><!--]--> Getting Started <!--[--><!--]--></a></div><div class="navbar-item"><a href="/configuration/" class="" aria-label="Configuration"><!--[--><!--]--> Configuration <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/L5Modular/L5Modular" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><a href="/introduction/" class="sidebar-item sidebar-heading" aria-label="Introduction"><!--[--><!--]--> Introduction <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/getting-started/" class="router-link-active router-link-exact-active router-link-active sidebar-item sidebar-heading active" aria-label="Getting Started"><!--[--><!--]--> Getting Started <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/getting-started/#installation" class="router-link-active router-link-exact-active sidebar-item" aria-label="Installation"><!--[--><!--]--> Installation <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/getting-started/#generating-a-module" class="router-link-active router-link-exact-active sidebar-item" aria-label="Generating A Module"><!--[--><!--]--> Generating A Module <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a href="/usage/" class="sidebar-item sidebar-heading" aria-label="Usage"><!--[--><!--]--> Usage <!--[--><!--]--></a><!----></li><li><a href="/artisan-commands/" class="sidebar-item sidebar-heading" aria-label="Artisan Commands"><!--[--><!--]--> Artisan Commands <!--[--><!--]--></a><!----></li><li><a href="/configuration/" class="sidebar-item sidebar-heading" aria-label="Configuration"><!--[--><!--]--> Configuration <!--[--><!--]--></a><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="getting-started" tabindex="-1"><a class="header-anchor" href="#getting-started" aria-hidden="true">#</a> Getting Started</h1><h2 id="installation" tabindex="-1"><a class="header-anchor" href="#installation" aria-hidden="true">#</a> Installation</h2><p>The easiest way to install this package is through your terminal via Composer.<br> Run the following command in a bash prompt from your projects root.</p><div class="language-bash ext-sh line-numbers-mode"><pre class="shiki" style="background-color:#282c34;"><code><span class="line"><span style="color:#ABB2BF;">composer require artem-schander/l5-modular</span></span>
+<span class="line"></span></code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><div class="custom-container tip"><p class="custom-container-title">REQUIREMENTS</p><p>L5Modular v2 requires <strong>at least</strong> PHP 7.2 and Laravel 5.7<br> Older PHP / Laravel versions are supported by L5Modular v1.</p></div><br><br><h2 id="generating-a-module" tabindex="-1"><a class="header-anchor" href="#generating-a-module" aria-hidden="true">#</a> Generating A Module</h2><p>The built in Artisan command <code>php artisan make:module hello-world</code> generates a ready to use <code>HelloWorld</code> module in the <code>app/Modules</code> folder.</p><p>The welcome method in the generated controller <code>Http/Controllers/HelloWorldController.php</code>, the corresponding route in <code>routes/web.php</code> and the view <code>welcome.blade.php</code>, make it easy to dive in.</p><p>After executing the mentioned make command, you should be able to see the output of the view <code>resources/views/welcome.blade.php</code> by opening <code>http://laravel-project.dev/hello-world</code> in your browser.</p><p><img src="/assets/l5modular-screenshot.png" alt="welcome screen acreenshot"></p><div class="custom-container warning"><p class="custom-container-title">WARNING</p><p>The host can differ depending on your local development environment</p></div><br><br><h4 id="default-module" tabindex="-1"><a class="header-anchor" href="#default-module" aria-hidden="true">#</a> Default Module</h4><p>Unless <a href="/configuration/" class="">otherwise configured</a>, this is how the generated module would look like.</p><div class="language-text ext-text line-numbers-mode"><pre class="shiki" style="background-color:#282c34;"><code><span class="line"><span style="color:#abb2bf;">laravel-project/
+    app/
+    └── Modules/
+        └── HelloWorld
+            ├── Http
+            │   └── Controllers
+            │       └── HelloWorldController.php
+            ├── Models
+            │   └── HelloWorld.php
+            ├── resources
+            │   ├── lang
+            │   │   └── en.php
+            │   └── views
+            │       └── welcome.blade.php
+            └── routes
+                ├── api.php
+                └── web.php
+</span></span></code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><br><br><h4 id="custom-module" tabindex="-1"><a class="header-anchor" href="#custom-module" aria-hidden="true">#</a> Custom Module</h4><p>The said command <a href="/configuration/" class="">can be configured</a> to generate modules completely differently structured and up to the following extent.<br> Of course it is also possible to <a href="/usage/#loading-additional-classes/" class="">add any kind of additional classes</a> to any module, as long as it follows the PSR-4 autoloading convention.</p><div class="language-text ext-text line-numbers-mode"><pre class="shiki" style="background-color:#282c34;"><code><span class="line"><span style="color:#abb2bf;">laravel-project/
+    app/
+    └── Modules/
+        └── HelloWorld
+            ├── Events
+            │   └── HelloWorld.php
+            ├── Http
+            │   ├── Controllers
+            │   │   └── HelloWorldController.php
+            │   ├── Requests
+            │   │   └── HelloWorld.php
+            │   └── Resources
+            │       └── HelloWorld.php
+            ├── Jobs
+            │   └── HelloWorld.php
+            ├── Listeners
+            │   └── HelloWorld.php
+            ├── Mail
+            │   └── HelloWorld.php
+            ├── Models
+            │   └── HelloWorld.php
+            ├── Notifications
+            │   └── HelloWorld.php
+            ├── Observers
+            │   └── HelloWorld.php
+            ├── Rules
+            │   └── HelloWorld.php
+            ├── config.php
+            ├── database
+            │   ├── factories
+            │   │   └── HelloWorldFactory.php
+            │   ├── migrations
+            │   │   └── 2020_04_19_111656_create_foo_bars_table.php
+            │   └── seeds
+            │       └── HelloWorldSeeder.php
+            ├── helpers.php
+            ├── resources
+            │   ├── lang
+            │   │   └── en.php
+            │   └── views
+            │       └── welcome.blade.php
+            └── routes
+                ├── api.php
+                └── web.php
+</span></span></code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="external-link meta-item-label" href="https://github.com/L5Modular/L5Modular.github.io/edit/main/docs/getting-started/README.md" rel="noopener noreferrer" target="_blank" aria-label="Help us improve this page!"><!--[--><!--]--> Help us improve this page! <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: schander.artem@gmail.com">Artem Schander</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/introduction/" class="" aria-label="Introduction"><!--[--><!--]--> Introduction <!--[--><!--]--></a></span><span class="next"><a href="/usage/" class="" aria-label="Usage"><!--[--><!--]--> Usage <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.d06ad9c0.js" defer></script>
+  </body>
+</html>
