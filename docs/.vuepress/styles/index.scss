@@ -312,6 +312,7 @@ header.navbar {
   .DocSearch.DocSearch-Button {
     margin-left: 0;
     width: 100%;
+    max-width: 400px;
   }
   @media (max-width: $MQNarrow) {
     .DocSearch.DocSearch-Button {
