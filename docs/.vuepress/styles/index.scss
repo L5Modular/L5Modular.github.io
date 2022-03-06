@@ -1,3 +1,5 @@
+@import '@vuepress/theme-default/lib/client/styles/_variables.scss';
+
 @font-face {
   font-family: 'Fira Code';
   font-style: normal;
@@ -309,8 +311,15 @@ header.navbar {
 
   .DocSearch.DocSearch-Button {
     margin-left: 0;
+    width: 100%;
+  }
+  @media (max-width: $MQNarrow) {
+    .DocSearch.DocSearch-Button {
+      width: auto;
+    }
   }
 }
+
 
 html.dark #docsearch-container {
   .DocSearch-Button-Key {
